@@ -6,9 +6,11 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">name</th>
+      <th scope="col">surname</th>
+      <th scope="col">phone_number</th>
+      <th scope="col">email</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -16,8 +18,10 @@
     <tr>
       <th scope="row">{{$user->id}}</th>
       <td>{{$user->name}}</td>
+      <td>{{$user->surname}}</td>
+      <td>{{$user->Phone_number}}</td>
       <td>{{$user->email}}</td>
-      <td>{{$user->password}}</td>
+      
     </tr>
    @endforeach
   </tbody>
