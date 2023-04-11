@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/users/lsit', [Usercontroller::class,'index'])->middleware('auth');
-    
+Route::delete('/users/{id}', [Usercontroller::class,'destroy'])->middleware('auth');
 
 
 Auth::routes();
